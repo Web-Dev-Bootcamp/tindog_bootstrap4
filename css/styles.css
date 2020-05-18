@@ -23,16 +23,12 @@ p {
 }
 
 .container-fluid {
-	padding: 3% 15% 0 15%;
+	padding: 3% 15% 10%;
 }
 
 #title {
 	background-color: #ff4c68;
 	color : #fff;
-}
-
-.title-header {
-	text-align: center;
 }
 
 /*Navigation Bar*/
@@ -63,20 +59,42 @@ p {
 
 .title-image {
 	width: 60%;
-	/*transform: rotate(25deg);*/
-	margin: 7% auto;
-	
+	transform: rotate(25deg);
+	position: absolute;
+	right: 30%;
 }
 
-#title-image-div {
-	overflow: hidden;
-	text-align: center;
+@media (max-width: 1000px) {
+	h1, h2, h3 {
+		font-size: 1.5rem;
+	}
+
+	#title {
+		text-align: center;
+	}
+
+	.title-image {
+		margin-top: 10%;
+		width: 60%;
+		transform: rotate(0);
+		position: static;
+	}	
+}
+
+@media (max-width: 600px) {
+	.navbar {
+		padding : 0 0 2rem;
+	}	
 }
 
 /*Features Section*/
 
 #features {
 	padding : 7% 15%;
+	background-color: white;
+	position: relative;
+	/*z-index: 1; Not necessary because if both elements are positioned and don't have a z-index
+	then the element below in the HTML flow will be on top.*/
 }
 
 .feature-box {
