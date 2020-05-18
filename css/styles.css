@@ -123,3 +123,14 @@ p {
 	width : 15%;
 	margin : 2%;
 }
+
+/*Pricing Section*/
+
+#pricing {
+	padding: 7% 10%;
+	text-align: center;
+}
+
+.pricing-card {
+	padding: 3% 2%;
+}
