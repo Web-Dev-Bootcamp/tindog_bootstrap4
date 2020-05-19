@@ -1,34 +1,22 @@
+/*HTML Selectors*/
 
 body {
 	font-family: "Montserrat";
+	text-align: center;
 }
 
-h1 {
-	font-family: "Montserrat";
-	font-size: 3.5rem;
-	line-height: 1.2;
-}
-
-h2 {
-	font-family: "Montserrat";
-	line-height: 1.5;	
-}
-
-h3 { 
-	font-family: "Montserrat";
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
 }
 
 p {
 	color: #8f8f8f;
 }
 
-.container-fluid {
-	padding: 3% 15% 10%;
-}
+/*Overall*/
 
-#title {
-	background-color: #ff4c68;
-	color : #fff;
+.container-fluid {
+	padding: 7% 15%;
 }
 
 /*Navigation Bar*/
@@ -55,7 +43,22 @@ p {
 	margin : 4% 5% 0 0;
 }
 
-/*Title Image*/
+/*Title Section*/
+
+#title {
+	background-color: #ff4c68;
+	text-align: left;
+	color : #fff;
+}
+
+#title .container-fluid {
+	padding: 3% 15% 10%;
+}
+
+.title-heading {
+	font-size: 3.5rem;
+	line-height: 1.2;
+}
 
 .title-image {
 	width: 60%;
@@ -64,33 +67,9 @@ p {
 	right: 30%;
 }
 
-@media (max-width: 1000px) {
-	h1, h2, h3 {
-		font-size: 1.5rem;
-	}
-
-	#title {
-		text-align: center;
-	}
-
-	.title-image {
-		margin-top: 10%;
-		width: 60%;
-		transform: rotate(0);
-		position: static;
-	}	
-}
-
-@media (max-width: 600px) {
-	.navbar {
-		padding : 0 0 2rem;
-	}	
-}
-
 /*Features Section*/
 
 #features {
-	padding : 7% 15%;
 	background-color: white;
 	position: relative;
 	/*z-index: 1; Not necessary because if both elements are positioned and don't have a z-index
@@ -98,7 +77,6 @@ p {
 }
 
 .feature-box {
-	text-align: center;
 	padding : 3%;
 }
 
@@ -114,9 +92,12 @@ p {
 /*Testimonial Section*/
 
 #testimonials {
-	text-align: center;
 	background-color: #ff4c68;
 	color : #fff;
+}
+
+.testimonial-text {
+	line-height: 1.5;	
 }
 
 .testimonial-image {
@@ -125,14 +106,9 @@ p {
 	margin: 5% 3% 2%;
 }
 
-.carousel-inner {
-	padding: 7% 15%;
-}
-
 /*Press Section*/
 
 #press {
-	text-align: center;
 	background-color: #ff4c68;
 	padding-bottom: 3%;
 }
@@ -144,11 +120,57 @@ p {
 
 /*Pricing Section*/
 
-#pricing {
-	padding: 7% 10%;
-	text-align: center;
+.pricing-section-heading {
+	line-height: 1.5;	
 }
 
 .pricing-card {
 	padding: 3% 2%;
+}
+
+.pricing-card-text {
+	line-height: 1.5;	
+}
+
+/*Call to Action Section*/
+
+#cta {
+	background-color: #ff4c68;
+	color: #fff;
+}
+
+/*Footer Section*/
+
+.social-icon {
+	margin: 1%;
+}
+
+/*Media Query Breakpoints*/
+
+@media (max-width: 1000px) {
+	h2, h3 {
+		font-size: 1.5rem;
+	}
+
+
+	#title {
+		text-align: center;
+	}
+
+	.title-heading {
+		font-size: 2rem;
+	}
+
+	.title-image {
+		margin-top: 10%;
+		width: 60%;
+		transform: rotate(0);
+		position: static;
+	}	
+}
+
+@media (max-width: 600px) {
+	.navbar {
+		padding : 0 0 2rem;
+	}	
 }
