@@ -13,10 +13,21 @@ p {
 	color: #8f8f8f;
 }
 
-/*Overall*/
+/*Containers*/
 
 .container-fluid {
 	padding: 7% 15%;
+}
+
+/*Sections*/
+
+.colored-section {
+	background-color: #ff4c68;
+	color : #fff;
+}
+
+.white-section {
+	background-color: white;
 }
 
 /*Navigation Bar*/
@@ -45,14 +56,11 @@ p {
 
 /*Title Section*/
 
-#title {
-	background-color: #ff4c68;
-	text-align: left;
-	color : #fff;
-}
-
-#title .container-fluid {
+#title .container-fluid { 
+/*Heirarchical selector so looks for an element that has class container-fluid
+inside an element that has id title*/
 	padding: 3% 15% 10%;
+	text-align: left;
 }
 
 .title-heading {
@@ -70,7 +78,6 @@ p {
 /*Features Section*/
 
 #features {
-	background-color: white;
 	position: relative;
 	/*z-index: 1; Not necessary because if both elements are positioned and don't have a z-index
 	then the element below in the HTML flow will be on top.*/
@@ -91,11 +98,6 @@ p {
 
 /*Testimonial Section*/
 
-#testimonials {
-	background-color: #ff4c68;
-	color : #fff;
-}
-
 .testimonial-text {
 	line-height: 1.5;	
 }
@@ -109,7 +111,6 @@ p {
 /*Press Section*/
 
 #press {
-	background-color: #ff4c68;
 	padding-bottom: 3%;
 }
 
@@ -134,11 +135,6 @@ p {
 
 /*Call to Action Section*/
 
-#cta {
-	background-color: #ff4c68;
-	color: #fff;
-}
-
 /*Footer Section*/
 
 .social-icon {
@@ -152,8 +148,7 @@ p {
 		font-size: 1.5rem;
 	}
 
-
-	#title {
+	#title .container-fluid{
 		text-align: center;
 	}
 
